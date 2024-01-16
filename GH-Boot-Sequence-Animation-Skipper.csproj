@@ -78,6 +78,7 @@
     <Compile Include="Transpiler.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="GH-Boot-Sequence-Animation-Skipper-Distributable\GH-Boot-Sequence-Animation-Skipper.dll" />
     <Content Include="Tasks\post-build.js" />
   </ItemGroup>
@@ -85,6 +86,7 @@
   <ItemGroup>
     <None Include="Developer-References\Drafts\Draft.md" />
     <None Include="Developer-References\TODOs.md" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
