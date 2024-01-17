@@ -10,6 +10,8 @@ let scriptFolderPath = __dirname;
 
 let projectRootFolderPath = path.resolve(scriptFolderPath, "..");
 
+let distFolderPath = path.resolve(projectRootFolderPath, "Dist");
+
 let ghBepInExPluginsFolderPath = "C:/Program Files (x86)/Steam/steamapps/common/Grey Hack/BepInEx/plugins";
 
 let ghBepInExPluginBuildUtils = new ghBepInExPluginBuildUtilsLib.GHBepInExPluginBuildUtils();
@@ -20,6 +22,6 @@ ghBepInExPluginBuildUtils.createPackage(
 );
 
 ghBepInExPluginBuildUtils.createPackage(
-    projectRootFolderPath,
-    pluginName + "-Distributable"
+    distFolderPath,
+    pluginName
 );
